@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un portal para ayudar al docente a llenar planillas y llevar control de sus alumnos ahorrando tiempo.">
+    <meta name="keywords" content="Docente, calculo de notas, lista de alumnos, profesor, alumno, herramienta">
+    <title>Docente Digital - Portal Educativo. </title>
+    <link href="images/noun-teach-3129886.svg" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg boxed-nav static-nav">
+            <div class="container">
+                <a href="index.html">
+                    <img src="images/noun-teach-3129886.svg" alt="logo" style="height:5rem ;width: 5rem;">
+                </a>
+
+                </button>
+                <div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Planilla-Alumnos">Crear Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Obtener-Datos">Datos del Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Obtener-Notas">Obtener Escala de Notas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <h1>Docente Digital</h1>
+            <P>Un sitio web pensado para el Docente</P>
+            <h3>Crea tu Curso</h3>
+            <form id="formulario-datos-docente">
+                <label for="nombreUsuario">Ingrese nombre de usuario</label>
+                <br>
+                <input id="nombreUsuario" type="text" placeholder="Nombre Usuario">
+                <br>
+                <label for="nombreCurso">Ingrese nombre del Curso para ver sus alumnos, ingresar en letras Ejemplo: Quinto B</label>
+                <br>
+                <input id="nombreCurso" type="text" placeholder="Nombre Curso">
+                <input type="submit" value="Buscar">
+            </form>
+            <br>
+            <div id="cargaCurso"></div>
+            <ul id="listadoAlumnos">
+            </ul>
+        </section>
+        <hr>
+        <!--
+
+             <section>
+            <a name="Obtener-Datos"></a>
+            <h3>Datos del Curso</h3>
+            <p> Al pulsar el boton "Obtener Datos" podrá obtener datos importantes basado en la información aportada al añadir alumnos al curso</p>
+            <input type="button" name="obtenerDatos" id="btnObtenerDatos" value="Obtener Datos">
+             </section>
+        -->
+
+        <hr>
+        <section>
+            <a name="Obtener-Notas"></a>
+            <h3>Escala de Notas</h3>
+            <p> Al pulsar el boton "Obtener Escala" podrá obtener una escala para aplicar en la corrección de los examenes</p>
+            <input type="number" id="puntaje" placeholder="Ingrese Total de puntos">
+            <input type="submit" id="btnObtenerEscala" value="Obtener Datos">
+            <div id="containerEscala"></div>
+        </section>
+
+
+        <script src="script/main.js"></script>
+</body>
+
+
+</html>
