@@ -17,11 +17,8 @@ function manejadorFormulario(e) {
     const listadoAlumnos = document.getElementById("listadoAlumnos");
     const alumnos = JSON.parse(localStorage.getItem(nombreCurso));
 
-    if (alumnos == null) {
-        listadoAlumnos.innerHTML = "<h1> Aun debes añadir Alumnos</h1>"
-    } else {
-        mostrarAlumnos(alumnos);
-    }
+    (alumnos == null) ? listadoAlumnos.innerHTML = "<h1> Aun debes añadir Alumnos</h1>": mostrarAlumnos(alumnos);
+
     mostrarPanel();
 }
 
@@ -88,12 +85,14 @@ function agregarAlumnos(e) {
 }
 
 function validarCampos(alumno) {
+    console.log(alumno || "Error en alumno para validar")
     if (alumno.nombreAlumno == "" || alumno.apellidoAlumno == "") {
         alert("El nombre no puede estar vacio")
     }
 }
 
 function eliminarAlumno(alumno) {
+    console.log(alumno || "Error en alumno para eliminar")
     const peliculasEnLocalStorage = JSON.parse(localStorage.getItem(nombreCurso));
     const nuevoArray = peliculasEnLocalStorage.filter(item => item.nombre != alumno.nombre);
     localStorage.setItem(nombreCurso, JSON.stringify(nuevoArray));
