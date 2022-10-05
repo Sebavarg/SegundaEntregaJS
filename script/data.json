@@ -1,0 +1,12 @@
+[
+    { "name": "Direccion General de Escuelas", "phone": 3852840, "mail": "" },
+    { "name": "Secretaria Privada", "phone": 3852785, "mail": "dge-secretariaprivada@mendoza.gov.ar" },
+    { "name": "Honorable Consejo Administrativo", "phone": 3852824, "mail": "hca@mendoza.gov.ar" },
+    { "name": "Jefatura Gabinete", "phone": 3852844, "mail": "dge-jefaturagabinete@mendoza.gov.ar" },
+    { "name": "Coordinación General de Educacion Superior ", "phone": 2613029107, "mail": "desuperior@mendoza.gov.ar" },
+    { "name": "Contaduría General", "phone": 385, "mail": "" },
+    { "name": "Direccion Recursos Humanos", "phone": 3852818, "mail": "dge-rrhh@mendoza.gov.ar" },
+    { "name": "Direccion de Tecnologias", "phone": 3852762, "mail": "dge-sistemas@mendoza.gov.ar" },
+    { "name": "Subsecretaria de Educacion", "phone": 3852803, "mail": "dge-subseceducacion@mendoza.gov.ar" },
+    { "name": "Dirección Educación Secundaria", "phone": 3852788, "mail": "dge-secretariasdes@mendoza.gov.ar" }
+]
